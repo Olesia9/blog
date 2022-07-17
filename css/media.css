@@ -1,0 +1,11 @@
+@media (min-width: 1789px) {
+    .trend-description {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 2424px) {
+    .trend-description {
+        font-size: calc(1em + .9em);
+    }
+}
