@@ -38,15 +38,38 @@ body {
     text-align: -webkit-center;
 }
 
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
 .header__menu-items {
     display: flex;
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
     color: #fff;
     font-size: 13px;
 
     font-weight: 400;
     font-family: "Open Sans";
+}
+
+.trend-description-top {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu-link {
+    text-transform: uppercase;
+}
+
+.header__menu-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .header__menu-item {
@@ -63,6 +86,8 @@ body {
     font-weight: 700;
     font-family: "Open Sans";
     line-height: 75px;
+
+    text-transform: uppercase;
 }
 
 .trend-title {
@@ -141,7 +166,7 @@ body {
     font-size: 12px;
 }
 
-h1 {
+h2 {
     margin-bottom: 0px;
     margin-top: 10px;
 }
@@ -162,11 +187,17 @@ h1 {
 
 .post-item__img {
     margin-right: 30px;
+    max-width: 940px;
+    width: 100%;
 }
 
 .post-tag {
     color: #b59f5b;
     font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .post-title {
@@ -194,6 +225,7 @@ h1 {
     text-transform: uppercase;
     font-size: 14px;
     position: relative;
+    margin-top: 5px;
 }
 
 .sidebar-title--position {
@@ -205,6 +237,13 @@ h1 {
 .tag {
     text-transform: uppercase;
     padding-right: 20px;
+    list-style-type: none;
+    color: #b59f5b;
+}
+
+.tag:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .post-sidebar {
@@ -306,7 +345,7 @@ h1 {
     margin-bottom: 435px;
 }
 
-.products-title>h1 {
+.products-title>h2 {
     position: relative;
     text-align: center;
     text-align: -webkit-center;
@@ -317,7 +356,7 @@ h1 {
     margin-bottom: 45px;
 }
 
-.trend-title>h1 {
+.trend-title>h2 {
     text-transform: uppercase;
     font-size: 20px;
     position: relative;
@@ -327,8 +366,8 @@ h1 {
 
 }
 
-.trend-title>h1::before,
-.products-title>h1::before {
+.trend-title>h2::before,
+.products-title>h2::before {
     content: "";
     position: absolute;
     top: 135%;
@@ -414,7 +453,7 @@ h1 {
     font-size: 20px;
 }
 
-.products-item__title>h1 {
+.products-item__title>h2 {
     text-transform: uppercase;
     font-size: 20px;
 }
